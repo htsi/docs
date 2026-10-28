@@ -34,12 +34,13 @@
 
 <section id="ko">
   <h1>보카업 초등 개인정보 처리방침</h1>
-  <p class="muted">시행일: 2026년 10월 20일 (이전 판: 2026년 10월 10일 · 같은 날 광고 자리 추가 반영)</p>
+  <p class="muted">시행일: 2026년 10월 28일 — 버전 1.0.2부터 사용 통계(PostHog) 추가 (이전 판: 2026년 10월 20일 · 2026년 10월 10일)</p>
 
   <p>보카업 초등(VocaUp Elementary)은 초등학생이 기기 안에서 영어 단어를 공부하는 앱입니다.</p>
 
-  <p><strong>보카업 초등에는 계정·자체 분석 도구·서버가 없고, 앱이 직접 수집하는 개인정보는 없습니다.</strong>
-    유일한 제3자 구성요소는 Google AdMob으로, 그날의 학습을 마친 뒤에만 나오는 광고 두 곳에 쓰입니다(버전 1.0.1부터).</p>
+  <p><strong>보카업 초등에는 계정·서버가 없고, 이름·연락처·사진·목소리 같은 정보를 받지 않습니다.</strong>
+    제3자 구성요소는 둘입니다 — 그날의 학습을 마친 뒤에만 나오는 광고 두 곳에 쓰는 Google AdMob(버전 1.0.1부터)과,
+    앱을 더 낫게 만들기 위한 사용 통계 도구 PostHog(버전 1.0.2부터)입니다.</p>
 
   <h2>광고 (Google AdMob)</h2>
   <ul>
@@ -57,19 +58,38 @@
       사용하지 않고, 다른 회사의 앱·웹사이트에 걸친 추적을 하지 않습니다.</li>
   </ul>
 
+  <h2>사용 통계 (PostHog, 버전 1.0.2부터)</h2>
+  <ul>
+    <li><strong>무엇을 보내나요.</strong> 앱을 어떻게 쓰는지에 대한 기록만 보냅니다 —
+      본 화면과 누른 버튼(화면 이름과 버튼은 정해 둔 영문 이름으로만 기록), 학습 진행 요약(미션 시작·완료, 찾은 단어 수,
+      레벨, 받은 포인트, 따라 읽기를 했는지·건너뛰었는지, 광고를 봤는지, 카드를 뽑았는지, 레벨 테스트 결과),
+      설정에서 바꾼 값(하루 목표 단어 수, 효과음·학습 알림 켬/끔, 알림 시각),
+      앱을 연 때와 닫은 때, 기기·앱 정보(기기 종류, iOS 버전, 앱 버전, 언어·시간대 설정, 화면 크기, 와이파이/셀룰러 여부).</li>
+    <li><strong>누구인지 알 수 없게.</strong> 사용자는 앱을 처음 실행할 때 기기 안에서 만든 <strong>무작위 번호(설치 번호)</strong>로만
+      구분합니다. 이 번호는 이 기기에만 저장되고 다른 기기로 옮겨지지 않으며, 이름·연락처·기기 이름·광고 식별자(IDFA)와 연결하지 않습니다.</li>
+    <li><strong>보내지 않는 것.</strong> 이름·연락처, 목소리와 따라 읽기에서 인식된 말, 공부한 단어, 답한 보기 하나하나, 위치.
+      IP 주소는 PostHog가 저장하지 않도록 설정했고, IP로 위치를 추정하지도 않습니다. 화면 녹화(세션 녹화)는 하지 않습니다.</li>
+    <li><strong>왜 쓰나요.</strong> 아이들이 어느 단계에서 어려워하거나 그만두는지, 어떤 기능을 쓰는지 보고 앱을 고치는 데에만 씁니다.
+      광고, 맞춤형 광고, 다른 앱·웹사이트에 걸친 추적에는 쓰지 않으며 판매하지 않습니다.</li>
+    <li><strong>처리 위탁·국외 이전.</strong> 사용 통계는 PostHog, Inc.(미국)가 운영하는 서버(PostHog Cloud, 미국)에 저장됩니다.
+      위 항목이 앱을 쓰는 동안 암호화된 연결(HTTPS)로 수시로 전송되며, 수집일로부터 최대 1년 동안 보관된 뒤 삭제됩니다.
+      PostHog의 처리 방식은 <a href="https://posthog.com/privacy">PostHog 개인정보처리방침</a>을 참고하세요.</li>
+    <li><strong>그만 보내려면.</strong> 앱을 삭제하면 더 이상 보내지 않습니다. 기록은 누구인지 알 수 없는 설치 번호로만 남아
+      특정한 사람의 기록을 골라 낼 수 없고, 보관 기간이 지나면 자동으로 삭제됩니다.</li>
+  </ul>
+
   <h2>그 외 모든 것</h2>
   <ul>
     <li><strong>계정 없음.</strong> 회원가입·로그인·서버가 없습니다.</li>
-    <li><strong>분석 도구 없음.</strong> 사용 통계·분석 도구나 광고 외의 데이터를 수집하는 제3자 SDK가 없습니다.</li>
     <li><strong>마이크·음성 인식.</strong> "따라 읽기" 단계에서 아이가 마이크 버튼을 누를 때만, 영어 단어를 소리 내어
       읽었는지 확인하려고 씁니다. 음성 인식은 기기 안에서만 이루어지고, 목소리는 녹음해 저장하거나 밖으로 보내지
       않습니다. 권한을 허용하지 않아도 이 단계를 건너뛰고 공부할 수 있습니다.</li>
     <li><strong>학습 알림.</strong> 정한 시간에 오는 알림은 기기 안에서 예약되는 로컬 알림이며, 서버를 거치지 않습니다.</li>
     <li><strong>기기 안에만 저장.</strong> 공부한 단어, 답한 기록과 걸린 시간, 레벨, 하루 목표, 포인트, 모은 카드는
-      이 기기에만 저장됩니다. 설정의 "학습 기록 초기화"로 지울 수 있고, 앱을 삭제하면 함께 삭제됩니다.</li>
+      이 기기에만 저장됩니다(사용 통계에는 위에 적은 요약만 갑니다). 설정의 "학습 기록 초기화"로 지울 수 있고, 앱을 삭제하면 함께 삭제됩니다.</li>
   </ul>
 
-  <p>위 광고 데이터 외에 보카업 초등이 수집하는 것은 없으며, 공유·판매·보관할 데이터도 없습니다.</p>
+  <p>위 광고 데이터와 사용 통계 외에 보카업 초등이 수집하는 것은 없으며, 어떤 데이터도 판매하지 않습니다.</p>
 
   <p>이 방침이 바뀌는 경우(예: 향후 버전에 앱 내 구입이 추가되는 경우) 변경이 적용되기 전에 이 페이지를 새
     시행일과 함께 고칩니다.</p>
@@ -82,14 +102,15 @@
 
 <section id="en" lang="en">
   <h1>VocaUp Elementary Privacy Policy</h1>
-  <p class="muted">Effective date: October 20, 2026 (previous version: October 10, 2026 · ad placements updated the same day)</p>
+  <p class="muted">Effective date: October 28, 2026 — usage analytics (PostHog) added from version 1.0.2 (previous versions: October 20, 2026 · October 10, 2026)</p>
 
   <p>VocaUp Elementary (보카업 초등) is an English vocabulary app for elementary school children. It runs on
     your device.</p>
 
-  <p><strong>VocaUp Elementary has no accounts, no analytics of its own, and no servers, and the app itself
-    collects no personal information.</strong> The only third-party component is Google AdMob, used for ads in
-    two places, both only after the day's study is finished (from version 1.0.1).</p>
+  <p><strong>VocaUp Elementary has no accounts and no servers, and never asks for names, contact details,
+    photos, or voice recordings.</strong> It has two third-party components: Google AdMob, used for ads in two
+    places, both only after the day's study is finished (from version 1.0.1), and PostHog, a usage analytics
+    tool used to improve the app (from version 1.0.2).</p>
 
   <h2>Advertising (Google AdMob)</h2>
   <ul>
@@ -112,23 +133,47 @@
       other companies' apps or websites.</li>
   </ul>
 
+  <h2>Usage analytics (PostHog, from version 1.0.2)</h2>
+  <ul>
+    <li><strong>What is sent.</strong> Only records of how the app is used: screens viewed and buttons tapped
+      (recorded by fixed English names), a summary of study progress (missions started and finished, number of
+      words found, level, points earned, whether the read-aloud step was done or skipped, whether an ad was watched,
+      cards drawn, level test result), settings changed (daily word goal, sound effects and study reminder on/off,
+      reminder time), when the app is opened and closed, and device and app information (device type, iOS version,
+      app version, language and time zone settings, screen size, Wi-Fi or cellular).</li>
+    <li><strong>Not tied to who you are.</strong> Users are distinguished only by a <strong>random number (install ID)</strong>
+      created on the device the first time the app runs. It is stored only on that device, never moves to another
+      device, and is never linked to a name, contact details, the device name, or the advertising identifier (IDFA).</li>
+    <li><strong>Never sent.</strong> Names or contact details, the voice or the words recognized in the read-aloud
+      step, the words studied, individual answer choices, or location. PostHog is set not to store IP addresses,
+      and IP addresses are not used to estimate location. There is no screen (session) recording.</li>
+    <li><strong>Why.</strong> Only to see where children struggle or stop and which features are used, so the app
+      can be improved. It is not used for advertising, personalized ads, or tracking across other apps or
+      websites, and it is never sold.</li>
+    <li><strong>Processor and transfer abroad.</strong> Usage analytics are stored on servers run by PostHog, Inc.
+      (PostHog Cloud, United States). The items above are sent over an encrypted connection (HTTPS) while the app is
+      in use and are kept for up to one year from collection, then deleted. See
+      <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</li>
+    <li><strong>To stop it.</strong> Deleting the app stops all sending. Records exist only under an install ID that
+      cannot be traced to a person, so one person's records cannot be singled out, and they are deleted
+      automatically when the retention period ends.</li>
+  </ul>
+
   <h2>Everything else</h2>
   <ul>
     <li><strong>No accounts.</strong> There is no sign-up, no login, and no server.</li>
-    <li><strong>No analytics.</strong> The app contains no analytics and no third-party SDKs that collect data
-      other than for the ad described above.</li>
     <li><strong>Microphone and speech recognition.</strong> Used only in the "read aloud" step, when the child taps
       the microphone button, to check that an English word was said. Recognition happens on the device only; the
       voice is never recorded, stored, or sent anywhere. Without the permission, the step can be skipped.</li>
     <li><strong>Study reminder.</strong> The daily reminder is a local notification scheduled on the device; no
       server is involved.</li>
     <li><strong>Local storage only.</strong> Studied words, answers and response times, level, daily goal, points,
-      and collected cards are stored only on the device. They can be erased with "학습 기록 초기화" (Reset
-      learning records) in Settings, and deleting the app deletes them.</li>
+      and collected cards are stored only on the device (usage analytics carry only the summary described above).
+      They can be erased with "학습 기록 초기화" (Reset learning records) in Settings, and deleting the app deletes them.</li>
   </ul>
 
-  <p>Apart from the advertising data described above, VocaUp Elementary collects nothing — there is nothing for
-    us to share, sell, or retain.</p>
+  <p>Apart from the advertising data and usage analytics described above, VocaUp Elementary collects nothing, and
+    no data is ever sold.</p>
 
   <p>If this policy ever changes — for example, if a future version adds in-app purchases — this page will be
     updated before the change ships, with a new effective date.</p>
